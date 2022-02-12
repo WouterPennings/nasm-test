@@ -1,3 +1,3 @@
-nasm -f elf64 -o main.o main.asm
-ld -o main main.o
-./main
+nasm -f elf64 -o $1.o $1.asm
+ld -o $2 $1.o
+./$2

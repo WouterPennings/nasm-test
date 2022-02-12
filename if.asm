@@ -36,23 +36,23 @@ _start:
   je True               ; If equal, jumo to label: True 
 
   False:
-    mov ebx, 0x30
-    mov [x], ebx
-    mov rdx, 1          ; Sets size of bites for syscall
-    call print_x        ; Prints '0'
-    jmp Continue
+  mov ebx, 0x30
+  mov [x], ebx
+  mov rdx, 1          ; Sets size of bites for syscall
+  call print_x        ; Prints '0'
+  jmp Continue
 
   True: 
-    mov ebx, 0x31
-    mov [x], ebx
-    mov rdx, 1          ; Sets size of bites for syscall
-    call print_x        ; Prints '1'
+  mov ebx, 0x31
+  mov [x], ebx
+  mov rdx, 1          ; Sets size of bites for syscall
+  call print_x        ; Prints '1'
 
   Continue: 
-    mov ebx, 0x454E4F44
-    mov [x], ebx
-    mov rdx, 4          ; Sets size of bites for syscall
-    call print_x        ; Prints 'DONE'
+  mov ebx, 0x454E4F44
+  mov [x], ebx
+  mov rdx, 4          ; Sets size of bites for syscall
+  call print_x        ; Prints 'DONE'
 
   ; Exiting program
   mov rax, 60       
