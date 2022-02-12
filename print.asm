@@ -1,3 +1,6 @@
+; X86 Assembly linux (Ubuntu 20.04)
+; NASM version 2.14.02
+
 global _start
 
 section .bss
