@@ -29,10 +29,8 @@ _start:
     L1:
     mov ebx, x          ; EBX is first value 
     cmp ebx, [y]        ; Compare EBX to ECX
-    jle L2              ; If equal, jumo to label: True 
-    jmp L3              ; If false jumo to L3
-
-    L2:
+    jg L2             ; If equal, jumo to label: True 
+    ; Code Block
     mov ecx, x 
     add ecx, 1
     mov [x], ecx
@@ -40,7 +38,7 @@ _start:
     call print
     jmp L1
 
-    L3:
+    L2:
     mov ecx, 0X64 
     mov [print_value], ecx
     call print
