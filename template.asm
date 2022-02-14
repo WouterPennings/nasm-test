@@ -4,14 +4,18 @@
 global _start
 
 section .bss
+    ; =====================
     ; Your variables
+    ; =====================
 
 section .text
 
 _start:
-
+    ; =====================
     ; Your code
+    ; =====================
 
+    ; =====================
     ; Exiting program
     mov rax, 60       
     mov rdi, 0       
