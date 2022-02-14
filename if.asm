@@ -35,7 +35,6 @@ _start:
   cmp ebx, ecx          ; Compare EBX to ECX
   je True               ; If equal, jumo to label: True 
 
-  False:
   mov ebx, 0x30
   mov [x], ebx
   mov rdx, 1          ; Sets size of bites for syscall
