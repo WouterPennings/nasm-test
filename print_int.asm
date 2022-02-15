@@ -52,7 +52,10 @@ print_i32:
         ret
 
 _start:
-    mov rdi, 12123
+    mov rdi, 1234
+    call print_i32
+
+    mov rdi, -1234
     call print_i32
 
     ; =====================
