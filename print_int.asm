@@ -5,8 +5,9 @@ global _start
 
 section .text
 
-; The print functions is written in C and compiled to assembly. (https://godbolt.org)
+; The print functions is written in C and compiled to assembly. (https://godbolt.org, -O3)
 ; did need some tweaking after. Source: https://github.com/wouterpennings/print_c
+; Can print postive and negative integers
 print_i32:
         sub     rsp, 40
         xor     r9d, r9d
